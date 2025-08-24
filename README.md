@@ -1,69 +1,189 @@
 # Userbot Plugins = 10 Packs
-Some useful & funny Userbot Plugins by @AbirHasan2005.
+A collection of useful & funny Telegram UserBot Plugins.
 
-### I will add new plugins anytime. So must Join [![telegram](https://img.shields.io/badge/Telegram-Telegram%20Group-blue.svg?logo=telegram)](http://t.me/linux_repo) for updates.
+## 🚀 Quick Start
 
-## Plugins List:
-- [hacking.py](https://github.com/AbirHasan2005/TG_UserBot_Plugins/blob/master/README.md#hacking)
-	- Can edit, depands on you
+### Prerequisites
+- Python 3.7 or higher
+- Telegram API credentials (API_ID, API_HASH)
+- UserBot framework (like @FridayOT or @UniBorg)
 
-- [iamyo.py](https://github.com/AbirHasan2005/TG_UserBot_Plugins/blob/master/README.md#iamyo)
-	- Edit before installing
+### Installation
 
-- [indianflag](https://github.com/AbirHasan2005/TG_UserBot_Plugins/blob/master/README.md#indiandlag)
-	- Don't edit anything
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/YourUsername/tg-userbot-plugins.git
+   cd tg-userbot-plugins
+   ```
 
-- [indianmap](https://github.com/AbirHasan2005/TG_UserBot_Plugins/blob/master/README.md#indianmap)
-	- Don't edit anything
+2. **Install dependencies**
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-- [ophack.py](https://github.com/AbirHasan2005/TG_UserBot_Plugins/blob/master/README.md#ophack)
-	- Don't edit anything
+3. **Configure the bot**
+   - Copy `.env.example` to `.env`
+   - Edit `.env` with your credentials
+   - Update `config.py` with your information
 
-- [repos.py](https://github.com/AbirHasan2005/TG_UserBot_Plugins/blob/master/README.md#repos)
-	- Edit before installing
+4. **Customize plugins**
+   - Edit personal information in plugins
+   - Replace placeholders with your data
 
-- [sleep.py](https://github.com/AbirHasan2005/TG_UserBot_Plugins/blob/master/README.md#sleep)
-	- Don't edit anything
+## 📋 Plugins List
 
-- [whoami.py](https://github.com/AbirHasan2005/TG_UserBot_Plugins/blob/master/README.md#whoami)
-	- Edit before installing
+### 🔧 **hacking.py** - Fake Hacking Environment
+- **Command:** `.hacking`
+- **Description:** Shows fake hacking terminal animation
+- **Status:** ✅ Ready to use
 
-- [pmpermit.py](https://github.com/AbirHasan2005/TG_UserBot_Plugins/blob/master/README.md#pmpermit)
-	- Edit before installing
+### 👤 **iamyo.py** - Personal Info Animation
+- **Command:** `.iamyo`
+- **Description:** Animated personal information display
+- **Status:** ⚠️ **Edit before installing** - Replace personal info
 
-- More coming soon
+### 🇮🇳 **indianflag.py** - Indian Flag Emoji
+- **Command:** `.inflag`
+- **Description:** Shows emoji-coded Indian flag
+- **Status:** ✅ Ready to use
 
-<a href="https://t.me/linux_repo"><img src="https://img.shields.io/badge/Telegram-Join%20Telegram%20Group-blue.svg?logo=telegram"></a>
+### 🗺️ **indianmap.py** - Indian Map ASCII
+- **Command:** `.inmap`
+- **Description:** Shows dot-coded Indian map
+- **Status:** ✅ Ready to use
 
-## hacking:
-Shows fake hacking environment. Runs with `.hacking` & this was fully coded by @AbirHasan2005
+### 🎭 **ophack.py** - Fake Hacking Animation
+- **Command:** `.ophack`
+- **Description:** Fake hacking animation (reply to user)
+- **Status:** ⚠️ **Edit before installing** - Replace personal info
 
-## pmpermit:
-New kind of pmpermit.    ***Please Edit PM_PERMIT Image Before Installing!***
+### 📚 **repos.py** - GitHub Repositories
+- **Command:** `.repos`
+- **Description:** Shows your GitHub repositories
+- **Status:** ⚠️ **Edit before installing** - Replace repository links
 
-## iamyo:
-Stylish Info for myself/yourself. Runs with `.iamyo` & this was modifed by @AbirHasan2005     ***Please Edit Before Installing!***
+### 😴 **sleep.py** - Sleep/AFK Status
+- **Command:** `.sleep`
+- **Description:** Set sleep/AFK status
+- **Status:** ✅ Ready to use
 
-## indiandlag:
-Shows Emoji coded Indian Flag. Runs with `.inflag` & coded my @AbirHasan2005
+### 🚫 **pmpermit.py** - PM Security
+- **Commands:** `.a`, `.block`, `.da`, `.listapproved`
+- **Description:** Advanced PM permission system
+- **Status:** ⚠️ **Edit before installing** - Configure group IDs
 
-## indianmap:
-Shows Dot(.) coded Indian Map. Runs with `.inmap` & coded by @AbirHasan2005
+### 🆔 **whoami.py** - Personal Information
+- **Command:** `.whoami`
+- **Description:** Detailed personal information display
+- **Status:** ⚠️ **Edit before installing** - Replace personal info
 
-## ophack:
-Shows fake hacking environment. Runs with `.ophack` reply to any user to work properly. This was modified by @AbirHasan2005
+### 🔌 **offline.py** - Offline Status
+- **Command:** `.offline`
+- **Description:** Set offline/AFK status
+- **Status:** ✅ Ready to use
 
-## repos:
-Shows my/your GitHub Repos. Runs with `.repos` & this was coded by @AbirHasan2005     ***Please Edit Before Installing!***
+## ⚙️ Configuration
 
-## sleep:
-It's a modified plugin of AFK. Can be used when you are going for a sleep. No need to mention anything. Can run with `.sleep` & modified by @AbirHasan2005
+### Environment Variables
+Create a `.env` file with:
+```env
+API_ID=your_api_id
+API_HASH=your_api_hash
+BOT_TOKEN=your_bot_token
+ALIVE_NAME=Your Name
+PRIVATE_GROUP_ID=your_group_id
+PLUGIN_CHANNEL=your_channel_id
+```
 
-## whoami:
-About myself/yourself. Runs with `.whoami` & this was modifed by @AbirHasan2005
+### Personal Information
+Edit these files to replace personal information:
+- `iamyo.py` - Your name and username
+- `repos.py` - Your GitHub repositories
+- `whoami.py` - Your personal details
+- `ophack.py` - Your Telegram ID
+- `config.py` - All personal settings
 
-## FOLLOW ME ON:
-<a href="https://github.com/AbirHasan2005"><img src="https://img.shields.io/badge/GitHub-Follow%20on%20GitHub-inactive.svg?logo=github"></a> <a href="https://twitter.com/AbirHasan2005"><img src="https://img.shields.io/badge/Twitter-Follow%20on%20Twitter-informational.svg?logo=twitter"></a> <a href="https://facebook.com/AbirHasan2005"><img src="https://img.shields.io/badge/Facebook-Follow%20on%20Facebook-blue.svg?logo=facebook"></a> <a href="https://instagram.com/AbirHasan2005"><img src="https://img.shields.io/badge/Instagram-Follow%20on%20Instagram-important.svg?logo=instagram"></a>
+## 🛠️ Customization Guide
 
-## Donate:
-[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://paypal.me/AbirHasan2005)
+### 1. Replace Personal Information
+```python
+# In iamyo.py, whoami.py, repos.py
+YOUR_NAME = "Your Actual Name"
+YOUR_USERNAME = "YourActualUsername"
+YOUR_GITHUB = "YourGitHubUsername"
+```
+
+### 2. Configure Group IDs
+```python
+# In pmpermit.py and config.py
+PRIVATE_GROUP_ID = 123456789  # Your private group ID
+PLUGIN_CHANNEL = 987654321    # Your plugin channel ID
+```
+
+### 3. Update API Credentials
+```python
+# In .env file
+API_ID=12345678
+API_HASH=abcdef1234567890abcdef1234567890
+```
+
+## 📁 Project Structure
+```
+tg-userbot-plugins/
+├── plugins/                 # Plugin files
+│   ├── hacking.py
+│   ├── iamyo.py
+│   ├── indianflag.py
+│   ├── indianmap.py
+│   ├── ophack.py
+│   ├── pmpermit.py
+│   ├── repos.py
+│   ├── sleep.py
+│   ├── whoami.py
+│   └── offline.py
+├── config.py               # Configuration file
+├── requirements.txt        # Python dependencies
+├── setup.py               # Installation script
+├── .env.example           # Environment variables template
+├── .gitignore            # Git ignore file
+├── LICENSE               # MIT License
+└── README.md             # This file
+```
+
+## 🔧 Troubleshooting
+
+### Common Issues
+1. **Import errors**: Make sure all dependencies are installed
+2. **Permission errors**: Check your Telegram API credentials
+3. **Plugin not working**: Verify command syntax and permissions
+
+### Debug Mode
+Enable debug logging in your UserBot configuration to see detailed error messages.
+
+## 📝 Contributing
+
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Test thoroughly
+5. Submit a pull request
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+
+- Original plugins by @AbirHasan2005
+- UserBot community for support
+- Contributors and maintainers
+
+## 📞 Support
+
+- **Telegram Group**: [Join our group](http://t.me/YourGroup)
+- **Issues**: [GitHub Issues](https://github.com/YourUsername/tg-userbot-plugins/issues)
+- **Documentation**: [Wiki](https://github.com/YourUsername/tg-userbot-plugins/wiki)
+
+---
+
+**⚠️ Important**: Remember to edit personal information in plugins before installing!

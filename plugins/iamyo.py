@@ -22,7 +22,7 @@ async def _(event):
             "a",
             "coder",
             "hacker",
-            "skills"
+            "skills",
             "git",
             "python",
             "ruby",
@@ -34,13 +34,13 @@ async def _(event):
             "Much",
             "I",
             "am",
-            "Abir",
-            "Hasan",
-            "Abir Hasan\n\n❤ @AbirHasan2005 ❤"
+            "Your",
+            "Name",
+            "Your Name\n\n❤ @YourUsername ❤"
          ]
             
 
     for i in animation_ttl:
         	
         await asyncio.sleep(animation_interval)
-        await event.edit(animation_chars[i % 18])
+        await event.edit(animation_chars[i % 21])

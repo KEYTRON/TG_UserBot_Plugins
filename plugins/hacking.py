@@ -6,7 +6,7 @@ from telethon import events
 import asyncio
 from userbot.utils import admin_cmd
 
-@borg.on(admin_cmd("termhack"))
+@borg.on(admin_cmd("hacking"))
 async def _(event):
     if event.fwd_from:
         return
