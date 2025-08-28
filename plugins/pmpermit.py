@@ -30,7 +30,7 @@ USER_BOT_NO_WARN = ("**Hello, this is a **\n"
 
 
 if Var.PRIVATE_GROUP_ID is not None:
-    @command(pattern="^.a ?(.*)")
+    @borg.on(admin_cmd(pattern="^.a ?(.*)"))
     async def approve_p_m(event):
         if event.fwd_from:
            return
@@ -51,7 +51,7 @@ if Var.PRIVATE_GROUP_ID is not None:
                 await event.delete()
 
 
-    @command(pattern="^.block ?(.*)")
+    @borg.on(admin_cmd(pattern="^.block ?(.*)"))
     async def approve_p_m(event):
         if event.fwd_from:
             return
@@ -66,7 +66,7 @@ if Var.PRIVATE_GROUP_ID is not None:
                 await asyncio.sleep(3)
                 await event.client(functions.contacts.BlockRequest(chat.id))
 
-    @command(pattern="^.da ?(.*)")
+    @borg.on(admin_cmd(pattern="^.da ?(.*)"))
     async def approve_p_m(event):
         if event.fwd_from:
             return
@@ -80,7 +80,7 @@ if Var.PRIVATE_GROUP_ID is not None:
                 await event.edit("Disapproved User [{}](tg://user?id={})".format(firstname, chat.id))
                 await event.delete()
 
-    @command(pattern="^.listapproved")
+    @borg.on(admin_cmd(pattern="^.listapproved"))
     async def approve_p_m(event):
         if event.fwd_from:
             return
@@ -111,9 +111,9 @@ if Var.PRIVATE_GROUP_ID is not None:
 
 
 
-    @bot.on(events.NewMessage(incoming=True))
+    @borg.on(events.NewMessage(incoming=True))
     async def on_new_private_message(event):
-        if event.from_id == bot.uid:
+        if event.from_id == borg.uid:
             return
 
         if Var.PRIVATE_GROUP_ID is None:
@@ -130,9 +130,9 @@ if Var.PRIVATE_GROUP_ID is not None:
             # userbot's should not reply to other userbot's
             # https://core.telegram.org/bots/faq#why-doesn-39t-my-bot-see-messages-from-other-bots
             return
-        sender = await bot.get_entity(chat_id)
+        sender = await borg.get_entity(chat_id)
 
-        if chat_id == bot.uid:
+        if chat_id == borg.uid:
 
             # don't log Saved Messages
 
@@ -192,12 +192,13 @@ if Var.PRIVATE_GROUP_ID is not None:
         PREV_REPLY_MESSAGE[chat_id] = r
 
 
-@bot.on(events.NewMessage(incoming=True, from_users=(1263617196,536157487,554048138,715779594)))
-async def hehehe(event):
-    if event.fwd_from:
-        return
-    chat = await event.get_chat()
-    if event.is_private:
-        if not pmpermit_sql.is_approved(chat.id):
-            pmpermit_sql.approve(chat.id, "**My Boss Is Best 🔥**")
-            await borg.send_message(chat, "**This User Is My Dev ! So Auto Approved !!!!**")
+# Auto-approve for specific users (edit these IDs as needed)
+# @bot.on(events.NewMessage(incoming=True, from_users=(YOUR_ID, FRIEND_ID)))
+# async def hehehe(event):
+#     if event.fwd_from:
+#         return
+#     chat = await event.get_chat()
+#     if event.is_private:
+#         if not pmpermit_sql.is_approved(chat.id):
+#             pmpermit_sql.approve(chat.id, "**My Boss Is Best 🔥**")
+#             await borg.send_message(chat, "**This User Is My Dev ! So Auto Approved !!!!**")
